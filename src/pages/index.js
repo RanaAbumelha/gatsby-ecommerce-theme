@@ -2,7 +2,6 @@ import * as React from 'react';
 
 import AttributeGrid from '../components/AttributeGrid';
 import Container from '../components/Container';
-import Hero from '../components/Hero';
 import BlogPreviewGrid from '../components/BlogPreviewGrid';
 import Highlight from '../components/Highlight';
 import Layout from '../components/Layout/Layout';
@@ -27,14 +26,7 @@ const IndexPage = () => {
   return (
     <Layout disablePaddingBottom>
       {/* Hero Container */}
-   <Hero
-        maxWidth={'500px'}
-        image={''}
-        title={'Essentials for a cold winter'}
-        subtitle={'Discover Autumn Winter 2021'}
-        ctaText={'shop now'}
-        ctaAction={goToShop}
-      />
+ 
       {/* Message Container */}
       <div className={styles.messageContainer}>
         <p>
@@ -87,7 +79,6 @@ const IndexPage = () => {
 
       {/* Promotion */}
       <div className={styles.promotionContainer}>
-        <Hero image={'/banner2.png'} title={`-50% off \n All Essentials`} />
         <div className={styles.linkContainers}>
           <Link to={'/shop'}>WOMAN</Link>
           <Link to={'/shop'}>MAN</Link>
@@ -113,16 +104,7 @@ const IndexPage = () => {
 
       {/* Promotion */}
       <div className={styles.sustainableContainer}>
-        <Hero
-          image={'/banner3.png'}
-          title={'We are Sustainable'}
-          subtitle={
-            'From caring for our land to supporting our people, discover the steps we’re taking to do more for the world around us.'
-          }
-          ctaText={'read more'}
-          maxWidth={'660px'}
-          ctaStyle={styles.ctaCustomButton}
-        />
+       
       </div>
 
       {/* Social Media */}
