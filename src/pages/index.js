@@ -27,15 +27,6 @@ const IndexPage = () => {
   return (
     <Layout disablePaddingBottom>
       {/* Hero Container */}
-      <Hero
-        maxWidth={'500px'}
-        image={'/https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRAu9MiHQpg03-NbrJArmpQskLwlML1f1n6ag&usqp=CAU'}
-        title={'Essentials for a cold winter'}
-        subtitle={'Discover Autumn Winter 2021'}
-        ctaText={'shop now'}
-        ctaAction={goToShop}
-      />
-
       {/* Message Container */}
       <div className={styles.messageContainer}>
         <p>
